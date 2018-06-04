@@ -25,20 +25,17 @@
 Francesco Fontana - VR081502   <br>
 Stefano Veraldi - VR378035 <br> <br>
 
-<h2><strong>REQUISITI</strong> <br></h2>
-- Ubuntu 16.04 <br>
-- Pangulin <br>
-- OpenCV 3.2 <br>
-- ROS (Robot Operative System) <br>
-- Eigen3 3.3.4 <br>
-- DBoW2 <br>
-- g2o <br>
-<br>
-
-<h2><strong>LINK</strong></h2>
-- <a href="https://www.ubuntu-it.org/download">Ubuntu</a><br>
+<h2><strong>REQUISITI & LINKS</strong> <br></h2>
+- <a href="https://www.ubuntu-it.org/download">Ubuntu 16.04</a><br>
 - <a href="https://github.com/stevenlovegrove/Pangolin">Pangolin</a><br>
-- <a href="https://opencv.org/releases.html">OpenCV</a><br> 
-- <a href="http://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen3</a><br> 
+- <a href="https://opencv.org/releases.html">OpenCV 3.2</a><br> 
+- ROS (Robot Operative System) <br>
+- <a href="http://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen3 3.3.4</a><br> 
 - <a href="https://github.com/dorian3d/DBoW2">DBoW2</a><br> 
 - <a href="https://github.com/RainerKuemmerle/g2o">g2o</a><br> 
+<br>
+
+
+
+
+
