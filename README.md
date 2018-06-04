@@ -9,21 +9,22 @@ Università degli Studi di Verona - Informatica 2017/2018
 2) Scaricare: <a href="http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/vicon_room1/V1_01_easy/V1_01_easy.bag"> V1_01_easy<a> (bag)
 <br>
 3) Lanciare i seguenti comandi da Terminale:<br>
-<br>
-<code>	
+<br>	
 chmod +x build_ros.sh 
+```
 <br>
 ./build_ros.sh
-</code>
+```
 <br>
 <br>
-<code>
 roscore 
+```
 <br>
 rosrun ORB_SLAM2 Stereo Vocabulary/ORBvoc.txt Examples/Stereo/EuRoC.yaml true 
+```
 <br>
 rosbag play --pause V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /cam1/image_raw:=/camera/right/image_raw 
-</code>
+```
 <br>
 
 
