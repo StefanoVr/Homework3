@@ -1,6 +1,6 @@
 
 <h2><strong> HOMEWORK 3 </strong></h2>
-	1) Installazione di ORB_SLAM2 (Follow this steps) - <a href="https://github.com/raulmur/ORB_SLAM2">Link</a> <br>
+	1) Installazione di ORB_SLAM2 (Follow this steps) <a href="https://github.com/raulmur/ORB_SLAM2">Link</a> <br>
 
 	2) Scaricare: <a href="http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/vicon_room1/V1_01_easy/V1_01_easy.bag"> V1_01_easy<a> (bag)<br>
 
