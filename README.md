@@ -18,15 +18,20 @@ rosbag play --pause V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /cam1
 ```
 # Parte 1 & 2
 Esecuzione di ORB_SLAM2 e della Bag V1_01_easy.bag
-
+```
 $ roscore
+```
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/1%20-%20roscore.png)
 
+```
 $ cd ORB_SLAM2
 $ rosrun ORB_SLAM2 Stereo Vocabulary/ORBvoc.txt Examples/Stereo/EuRoC.yaml true
+```
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/2%20-%20rosrun.png)
 
+```
 $ rosbag play --pause V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /cam1/image_raw:=/camera/right/image_raw
+```
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/3%20-%20rosplay.png)
 
 Volo e Acquisizione dei dati
