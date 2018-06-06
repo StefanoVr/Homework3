@@ -1,6 +1,6 @@
 # HOMEWORK3 
 Università degli Studi di Verona - Informatica 2017/2018
-# Istruzioni
+# ISTRUZIONI
 1) Installazione di ORB_SLAM2 <a href="https://github.com/raulmur/ORB_SLAM2">Link</a> 
 2) Scaricare: <a href="http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/vicon_room1/V1_01_easy/V1_01_easy.bag"> V1_01_easy<a> (bag)
 3) Lanciare i seguenti comandi da Terminale:
