@@ -18,7 +18,7 @@ $ roscore
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/1%20-%20roscore.png)
 
 ```
-$ cd ORB_SLAM2
+$ cd ORB_SLAM2/
 $ rosrun ORB_SLAM2 Stereo Vocabulary/ORBvoc.txt Examples/Stereo/EuRoC.yaml true
 ```
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/2%20-%20rosrun.png)
