@@ -19,7 +19,7 @@ rosbag play --pause V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /cam1
 # Parte 1 & 2
 Esecuzione di ORB_SLAM2 e della Bag V1_01_easy.bag
 
-![alt text](https://raw.githubusercontent.com/StefanoVr/Homework3/master/images/1 - roscore.png)
+![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/1%20-%20roscore.png)
 
 
 # Autori
