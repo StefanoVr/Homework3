@@ -19,6 +19,8 @@ rosbag play --pause V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /cam1
 # Parte 1 & 2
 Esecuzione di ORB_SLAM2 e della Bag V1_01_easy.bag
 
+![alt text](https://raw.githubusercontent.com/StefanoVr/Homework3/master/images/)
+
 
 # Autori
 Francesco Fontana - VR081502   <br>
