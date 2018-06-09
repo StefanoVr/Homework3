@@ -45,8 +45,10 @@ $ rosbag play --pause V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /ca
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/5%20-%20end-fly.png)
 
 # Parte 3 & 4
-Per la realizzazione dei punti 3 e 4 abbiamo implementato all'interno della cartella 
-> ORB_SLAM2/ 
+Per la realizzazione dei punti 3 e 4 è stato implementato all'interno del codice del file 
+> ORB_SLAM2/Examples/stereo_euroc.cc
+Una porzione di codice che generasse le pointcloud estratte in seguito all'esecuzione della bag relativa alla fase di volo.
+Successivamente è stato creato un file ad HOC che convertisse il file generato in formato .txt in .pcd
 
 
 # Autori
