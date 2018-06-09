@@ -41,7 +41,7 @@ $ rosbag play --pause V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /ca
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/fly4.png)
 <hr>
 <strong>Fine del Volo e dell'acquisizione dei dati</strong>
-<br>
+
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/5%20-%20end-fly.png)
 
 # Parte 3 & 4
