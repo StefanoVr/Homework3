@@ -34,18 +34,19 @@ $ rosbag play --pause V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /ca
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/3%20-%20rosplay.png)
 <hr>
 <strong>Volo e Acquisizione dei dati</strong>
-
-
+<br>
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/4%20-%20fly1.png)
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/fly2.png)
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/fly3.png)
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/fly4.png)
 <hr>
 <strong>Fine del Volo e dell'acquisizione dei dati</strong>
-
-
+<br>
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/5%20-%20end-fly.png)
 
+# Parte 3 & 4
+Per la realizzazione dei punti 3 e 4 abbiamo implementato all'interno della cartella 
+> ORB_SLAM2/ 
 
 
 # Autori
