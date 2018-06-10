@@ -79,7 +79,7 @@ int main (int argc, char** argv)
   pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ>);
   tree->setInputCloud(cloud_filtered);
   
-  double tolerance = 0.45; // 2cm
+  double tolerance = 0.20; // 20cm
   std::vector<pcl::PointIndices> cluster_indices;
   unsigned int min_pts_per_cluster = 1; 
   unsigned int max_pts_per_cluster = (cloud_filtered->points.size()); 
@@ -91,16 +91,11 @@ int main (int argc, char** argv)
   ec.setInputCloud(cloud_filtered);
   ec.extract(cluster_indices);
  
-  std::cout << "Check1." << std::endl;
-
   int j = 0;
   
-  std::cout << "Check2." << std::endl;
   
   for (std::vector<pcl::PointIndices>::const_iterator it = cluster_indices.begin(); it != cluster_indices.end(); ++it)
-  {
-	std::cout << "Check3." << std::endl;  
-	  
+  {	  
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_cluster (new pcl::PointCloud<pcl::PointXYZ>);
     for (std::vector<int>::const_iterator pit = it->indices.begin(); pit != it->indices.end(); ++pit)
       cloud_cluster->points.push_back(cloud_filtered->points[*pit]); //*
@@ -116,7 +111,6 @@ int main (int argc, char** argv)
     j++;
   }
 
-  std::cout << "Check4." << std::endl;	
 
   return (0);
 }
