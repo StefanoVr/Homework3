@@ -11,11 +11,17 @@ AA 2017/2018
 1) Installazione di ORB_SLAM2 <a href="https://github.com/raulmur/ORB_SLAM2">Link</a> 
 2) Scaricare: <a href="http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/vicon_room1/V1_01_easy/V1_01_easy.bag"> V1_01_easy<a> (bag)
 3) Lanciare i seguenti comandi da Terminale:
+	
 ```
 chmod +x build_ros.sh 
 ./build_ros.sh
 ```
-	
+NB: Nel file .bashrc aggiungere il seguente codice 
+
+```
+export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:PATH/ORB_SLAM2/Examples/ROS
+```
+
 Esecuzione di ORB_SLAM2 e della Bag V1_01_easy.bag
 ```
 $ roscore
