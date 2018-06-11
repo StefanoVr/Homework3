@@ -79,13 +79,14 @@ void System::SaveMapPoints(const string &filename) {
 Tale funzione permette di salvare i punti dell'algoritmo di Slam in un file .txt 
 > MapPointsSave.txt
 
-La funzione viene implementata all'interno dei file:
-System.h
+Il prototipo di funzione viene aggiunto:
+<br>
+ORB_SLAM2/include/System.h
 ```
 void SaveMapPoints(const string &filename);
 ```
 
-ros_stereo.cc
+ORB_SLAM2/Examples/ROS/ORB_SLAM2/src/ros_stereo.cc
 ```
 void SaveMapPoints(const string &filename);
 ```
