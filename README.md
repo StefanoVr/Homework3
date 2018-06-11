@@ -96,6 +96,7 @@ A questo punto il file .txt deve essere convertito in un file .pcd, per questo √
 > pcd_write.cc
 Tale file si occuper√† di prendere in input un file .txt e convertire i punti estratti, in seguito all'esecuzione della bag,
 e convertirli in .pcd
+
 ```
 // reading a text file
 #include <iostream>
@@ -105,10 +106,8 @@ e convertirli in .pcd
 #include <boost/foreach.hpp>
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
-
 using namespace boost;
 using namespace std;
-
 int main () {
   string line;
   char_separator<char> sep(" ");
