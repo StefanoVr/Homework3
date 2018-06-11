@@ -178,6 +178,7 @@ Per clusterizzare il file .pcd ottenuto è stato seguito il codice al [link](htt
 
 E' stato creato il file <br>
 > cluster_extraction.cc <br>
+
 per eseguire l'estrazione Cluster Euclidea e generare i file cloud_cluster.pcd <br>
 
 ```
