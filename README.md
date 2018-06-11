@@ -374,7 +374,7 @@ Stefano Veraldi - VR378035 <br> <br>
 - <a href="https://www.ubuntu-it.org/download">Ubuntu 16.04</a>
 - <a href="https://github.com/stevenlovegrove/Pangolin">Pangolin</a>
 - <a href="http://www.python36.com/how-to-install-opencv340-on-ubuntu1604/">OpenCV 3.4</a>
-- ROS (Robot Operative System)
+- <a href="http://wiki.ros.org/kinetic/Installation/Ubuntu">ROS (Robot Operative System)</a>
 - <a href="http://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen3 3.3.4</a>
 - <a href="https://github.com/dorian3d/DBoW2">DBoW2</a> 
 - <a href="https://github.com/RainerKuemmerle/g2o">g2o</a> 
