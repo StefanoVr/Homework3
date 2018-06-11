@@ -83,7 +83,7 @@ void System::SaveMapPoints(const string &filename) {
 ```
 [Link del Codice](https://github.com/raulmur/ORB_SLAM/issues/5)
 
-Tale funzione permette di salvare i punti dell'algoritmo di Slam in un file .txt 
+Tale funzione permette di salvare i punti dell'algoritmo di Slam in un file .txt all'interno della cartella ORB_SLAM2/ 
 > MapPointsSave.txt
 <br>
 Il prototipo di funzione viene aggiunto:
