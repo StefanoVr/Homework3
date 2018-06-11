@@ -361,7 +361,7 @@ In seguito a vari tentativi sono stati modificati i valori:
 > min_pts_per_cluster = 2; <br>
 > max_pts_per_cluster = (cloud_filtered->points.size()) <br>
 
-Eseguire il seguente comando per generare e visualizzare la point_cloud clusterizzata
+Copiare il seguente script all'interno della directory ORB_SLAM2 e lanciarlo per generare e visualizzare la point_cloud clusterizzata
 ```
 $ ./script.sh
 ```
