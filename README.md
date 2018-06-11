@@ -100,6 +100,16 @@ ORB_SLAM2/Examples/ROS/ORB_SLAM2/src/ros_stereo.cc
 SLAM.SaveMapPoints("MapPointsSave.txt");
 ```
 
+Ricompilare ORB_SLAM2
+```
+cd ORB_SLAM2/build
+cmake ..
+cmake --build .
+cd ..
+./build.sh
+./build_ros.sh
+```
+
 Rieseguire la 'rosbag' per la generazione del file .txt che verrà salvato nella cartella ORB_SLAM2/ dopo aver chiuso l'esecuzione della rosbag con il comando 'ctrl-c'
 
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/map_points_save.png)
