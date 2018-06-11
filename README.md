@@ -193,10 +193,14 @@ In seguito a vari tentativi sono stati modificati i valori:
 > min_pts_per_cluster = 2; <br>
 > max_pts_per_cluster = (cloud_filtered->points.size()) <br>
 
+Eseguire il seguente comando per generare e visualizzare la point_cloud clasterizzata
+```
+$ ./script.sh
+```
+
 Generando così la point_cloud riportata di seguito
 
-
-[]()
+![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/cluster_extraction.png)
 
 
 
