@@ -93,7 +93,7 @@ ORB_SLAM2/Examples/ROS/ORB_SLAM2/src/ros_stereo.cc
 SLAM.SaveMapPoints("MapPointsSave.txt");
 ```
 
-Viene modificato il CMakeList.txt implementando al suo interno le seguenti righe per la generazione dei file eseguibili pcd_write e cluster_exctraction
+Viene modificato il CMakeList.txt implementando al suo interno le seguenti righe per la generazione dei file eseguibili pcd_write e cluster_extraction
 
 ```
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR})
@@ -125,6 +125,13 @@ add_executable (cluster_extraction cluster_extraction.cc)
 target_link_libraries (cluster_extraction ${PCL_LIBRARIES})
 ```
 
+NB: Ricompilare la directory ORB_SLAM2
+
+```
+cd build/
+cmake ..
+cmake --build .
+```
 
 A questo punto il file .txt deve essere convertito in un file .pcd, per questo è stato implementato il codice
 
