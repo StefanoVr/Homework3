@@ -100,9 +100,11 @@ ORB_SLAM2/Examples/ROS/ORB_SLAM2/src/ros_stereo.cc
 SLAM.SaveMapPoints("MapPointsSave.txt");
 ```
 
-Rieseguire la 'rosbag' per la generazione del file .txt
+Rieseguire la 'rosbag' per la generazione del file .txt che verrà salvato nella cartella ORB_SLAM2/ dopo aver chiuso l'esecuzione della rosbag con il comando 'ctrl-c'
 
 Viene modificato il CMakeList.txt implementando al suo interno le seguenti righe per la generazione dei file eseguibili pcd_write e cluster_extraction
+
+NB: per la corretta esecuzione copiare i file pcd_write.cc e cluster_extraction.cc all'interno della cartella ORB_SLAM2/
 
 ```
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR})
@@ -213,7 +215,7 @@ int main () {
 }
 ```
 
-Per la generazione del file .pcd, eseguire il seguente comando
+Per la generazione del file <strong>pointcloud.pcd</strong>, eseguire il seguente comando
 
 > $ ./pcd_write 
 
@@ -226,7 +228,7 @@ Per la visualizzazione della point_cloud generata, eseguire il seguente comando 
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/poincloud.png)
 
 ## Parte 4.2
-Per clusterizzare il file .pcd ottenuto è stato seguito il codice al [link](http://www.pointclouds.org/documentation/tutorials/cluster_extraction.php)
+Per clusterizzare il file pointcloud.pcd ottenuto è stato seguito il codice al [link](http://www.pointclouds.org/documentation/tutorials/cluster_extraction.php)
 
 E' stato creato il file <br>
 > cluster_extraction.cc <br>
