@@ -40,14 +40,14 @@ $ rosbag play --pause V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /ca
 ```
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/3%20-%20rosplay.png)
 <hr>
-<strong>Volo e Acquisizione dei dati</strong>
+<strong>Esecuzione della bag</strong>
 
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/4%20-%20fly1.png)
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/fly2.png)
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/fly3.png)
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/fly4.png)
 <hr>
-<strong>Fine del Volo e dell'acquisizione dei dati</strong>
+<strong>Fine esecuzione della bag</strong>
 
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/5%20-%20end-fly.png)
 
