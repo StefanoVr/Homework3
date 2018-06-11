@@ -93,6 +93,39 @@ ORB_SLAM2/Examples/ROS/ORB_SLAM2/src/ros_stereo.cc
 SLAM.SaveMapPoints("MapPointsSave.txt");
 ```
 
+Viene modificato il CMakeList.txt implementando al suo interno le seguenti righe per la generazione dei file eseguibili pcd_write e cluster_exctraction
+
+```
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR})
+
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+
+project(pcd_write)
+
+find_package(PCL 1.2 REQUIRED)
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+add_executable (pcd_write pcd_write.cc)
+target_link_libraries (pcd_write ${PCL_LIBRARIES})
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR})
+
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+
+project(cluster_extraction)
+
+find_package(PCL 1.2 REQUIRED)
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+add_executable (cluster_extraction cluster_extraction.cc)
+target_link_libraries (cluster_extraction ${PCL_LIBRARIES})
+```
+
+
 A questo punto il file .txt deve essere convertito in un file .pcd, per questo è stato implementato il codice
 
 > pcd_write.cc 
@@ -298,8 +331,6 @@ int main (int argc, char** argv)
     writer.write<pcl::PointXYZ> (ss.str(), *cloud_cluster, false); //*
     j++;
   }
-
-
   return (0);
 }
 ```
@@ -322,23 +353,6 @@ Generando così la point_cloud riportata di seguito
 
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/cluster_extraction.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Autori
 Francesco Fontana - VR081502   <br>
 Stefano Veraldi - VR378035 <br> <br>
@@ -352,8 +366,3 @@ Stefano Veraldi - VR378035 <br> <br>
 - <a href="https://github.com/dorian3d/DBoW2">DBoW2</a> 
 - <a href="https://github.com/RainerKuemmerle/g2o">g2o</a> 
 <br>
-
-
-
-
-
