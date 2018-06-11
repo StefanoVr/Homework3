@@ -160,13 +160,19 @@ int main () {
 }
 ```
 
-Per la generazione del flie .pcd, eseguire il seguente comando <br>
+- Rieseguire la 'rosbag' per la generazione del file .txt
+
+- Per la generazione del flie .pcd, eseguire il seguente comando <br>
 > $ ./pcd_write 
+
+
+# Parte 4
 
 Per la visualizzazione della point_cloud generata, eseguire il seguente comando <br>
 > $ pcl_viewer pointcloud.pcd
 
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/poincloud.png)
+
 
 
 
