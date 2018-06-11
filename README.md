@@ -173,6 +173,10 @@ Per la visualizzazione della point_cloud generata, eseguire il seguente comando 
 
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/poincloud.png)
 
+## Parte 4.2
+Per clusterizzare il file .pcd ottenuto è stato seguito il codice al [link](http://www.pointclouds.org/documentation/tutorials/cluster_extraction.php)
+
+
 
 
 
