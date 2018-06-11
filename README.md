@@ -160,6 +160,30 @@ int main () {
 }
 ```
 
+Per la generazione del flie .pcd, eseguire il seguente comando <br>
+> $ ./pcd_write 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Autori
 Francesco Fontana - VR081502   <br>
 Stefano Veraldi - VR378035 <br> <br>
