@@ -359,12 +359,10 @@ In seguito a vari tentativi sono stati modificati i valori:
 > min_pts_per_cluster = 2; <br>
 > max_pts_per_cluster = (cloud_filtered->points.size()) <br>
 
-Eseguire il seguente comando per generare e visualizzare la point_cloud clasterizzata
+Eseguire il seguente comando per generare e visualizzare la point_cloud clusterizzata
 ```
 $ ./script.sh
 ```
-
-Generando così la point_cloud riportata di seguito
 
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/cluster_extraction.png)
 
@@ -375,7 +373,7 @@ Stefano Veraldi - VR378035 <br> <br>
 # Requisiti & Links
 - <a href="https://www.ubuntu-it.org/download">Ubuntu 16.04</a>
 - <a href="https://github.com/stevenlovegrove/Pangolin">Pangolin</a>
-- <a href="https://opencv.org/releases.html">OpenCV 3.2</a>
+- <a href="http://www.python36.com/how-to-install-opencv340-on-ubuntu1604/">OpenCV 3.4</a>
 - ROS (Robot Operative System)
 - <a href="http://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen3 3.3.4</a>
 - <a href="https://github.com/dorian3d/DBoW2">DBoW2</a> 
