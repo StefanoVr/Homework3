@@ -166,7 +166,7 @@ Per la generazione del flie .pcd, eseguire il seguente comando <br>
 Per la visualizzazione della point_cloud generata, eseguire il seguente comando <br>
 > $ pcl_viewer pointcloud.pcd
 
-[pointcloud](https://github.com/StefanoVr/Homework3/blob/master/images/poincloud.png)
+(https://github.com/StefanoVr/Homework3/blob/master/images/poincloud.png)
 
 
 
