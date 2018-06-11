@@ -177,7 +177,8 @@ Per la visualizzazione della point_cloud generata, eseguire il seguente comando 
 Per clusterizzare il file .pcd ottenuto è stato seguito il codice al [link](http://www.pointclouds.org/documentation/tutorials/cluster_extraction.php)
 
 E' stato creato il file <br>
-> cluster_extraction.cc
+> cluster_extraction.cc <br>
+
 per eseguire l'estrazione Cluster Euclidea e generare i file cloud_cluster.pcd <br>
 
 ```
@@ -185,12 +186,12 @@ per eseguire l'estrazione Cluster Euclidea e generare i file cloud_cluster.pcd <
 
 
 In seguito a vari tentativi sono stati modificati i valori:
-> seg.setMaxIteration(100);
-> seg.setDistanceThreshold(0.001);
-> cloud_filtered->points.size() > 0.9 * nr_points
-> tollerance = 0.15; // 15 cm
-> min_pts_per_cluster = 2;
-> max_pts_per_cluster = (cloud_filtered->points.size())
+> seg.setMaxIteration(100);  <br>
+> seg.setDistanceThreshold(0.001); <br>
+> cloud_filtered->points.size() > 0.9 * nr_points <br>
+> tollerance = 0.15; // 15 cm <br>
+> min_pts_per_cluster = 2; <br>
+> max_pts_per_cluster = (cloud_filtered->points.size()) <br>
 
 Generando così la point_cloud riportata di seguito
 
