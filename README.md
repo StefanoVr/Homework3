@@ -82,18 +82,21 @@ Tale funzione permette di salvare i punti dell'algoritmo di Slam in un file .txt
 Il prototipo di funzione viene aggiunto:
 <br>
 ORB_SLAM2/include/System.h
-<br>
+
 ```
 void SaveMapPoints(const string &filename);
 ```
 
 ORB_SLAM2/Examples/ROS/ORB_SLAM2/src/ros_stereo.cc
+
 ```
 SLAM.SaveMapPoints("MapPointsSave.txt");
 ```
-<br>
-A questo punto il file .txt deve essere convertito in un file .pcd, per questo è stato implementato il codice <br>
-> pcd_write.cc <br>
+
+A questo punto il file .txt deve essere convertito in un file .pcd, per questo è stato implementato il codice
+
+> pcd_write.cc 
+
 Tale file si occuperà di prendere in input un file .txt e convertire i punti estratti, in seguito all'esecuzione della bag,
 e convertirli in .pcd
 
