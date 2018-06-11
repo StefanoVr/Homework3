@@ -91,8 +91,7 @@ ORB_SLAM2/Examples/ROS/ORB_SLAM2/src/ros_stereo.cc
 SLAM.SaveMapPoints("MapPointsSave.txt");
 ```
 <br>
-<br>
-A questo punto il file .txt deve essere convertito in un file .pcd, per questo è stato implementato il codice 
+A questo punto il file .txt deve essere convertito in un file .pcd, per questo è stato implementato il codice <br>
 > pcd_write.cc
 Tale file si occuperà di prendere in input un file .txt e convertire i punti estratti, in seguito all'esecuzione della bag,
 e convertirli in .pcd
