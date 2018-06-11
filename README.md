@@ -5,17 +5,18 @@ Corso di Robotica - Laboratorio Ciberfisico
 
 AA 2017/2018
 
-# Istruzioni
+# ISTRUZIONI
 1) Installazione di ORB_SLAM2 <a href="https://github.com/raulmur/ORB_SLAM2">Link</a> 
+
+# Parte 1 & 2
+
 2) Scaricare: <a href="http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/vicon_room1/V1_01_easy/V1_01_easy.bag"> V1_01_easy<a> (bag)
 3) Lanciare i seguenti comandi da Terminale:
 ```
 chmod +x build_ros.sh 
-
 ./build_ros.sh
 ```
-
-# Parte 1 & 2
+	
 Esecuzione di ORB_SLAM2 e della Bag V1_01_easy.bag
 ```
 $ roscore
