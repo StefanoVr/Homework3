@@ -44,13 +44,38 @@ $ rosbag play --pause V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /ca
 
 ![alt text](https://github.com/StefanoVr/Homework3/blob/master/images/5%20-%20end-fly.png)
 
-# Parte 3 & 4
-Per la realizzazione dei punti 3 e 4 è stato implementato all'interno del codice del file 
-> ORB_SLAM2/Examples/stereo_euroc.cc
+# Parte 3
+Per la realizzazione del punto 3 è stato implementato all'interno del file ORB_SLAM2/src/System.cc la seguente porzione di codice
+```
+void System::SaveMapPoints(const string &filename) {
+    cout << endl << "Saving map points to " << filename << " ..." << endl;
 
-Una porzione di codice che generasse le pointcloud estratte in seguito all'esecuzione della bag relativa alla fase di volo.
-Successivamente è stato creato un file ad HOC che convertisse il file generato in formato .txt in .pcd
+    vector<MapPoint*> vpMPs = mpMap->GetAllMapPoints();
 
+    // Transform all keyframes so that the first keyframe is at the origin.
+    // After a loop closure the first keyframe might not be at the origin.
+    ofstream f;
+    f.open(filename.c_str());
+    f << fixed;
+
+    for(size_t i=0; i<vpMPs.size(); i++) {
+        MapPoint* pMP = vpMPs[i];
+
+        if(pMP->isBad())
+            continue;
+
+        cv::Mat MPPositions = pMP->GetWorldPos();
+
+        f << setprecision(7) << " " << MPPositions.at<float>(0) << " " << MPPositions.at<float>(1) << " " << MPPositions.at<float>(2) << endl;
+    }
+
+    f.close();
+    cout << endl << "Map Points saved!" << endl;
+
+}
+```
+Tale funzione permette di salvare i punti dell'algoritmo di Slam in un file .txt 
+> MapPointsSave.txt
 
 # Autori
 Francesco Fontana - VR081502   <br>
