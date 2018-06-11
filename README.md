@@ -228,11 +228,11 @@ int main (int argc, char** argv)
   seg.setOptimizeCoefficients(true);
   seg.setModelType(pcl::SACMODEL_PLANE);
   seg.setMethodType(pcl::SAC_RANSAC);
- <b>seg.setMaxIterations(100);
-  seg.setDistanceThreshold(0.001);</b>
+  seg.setMaxIterations(100);
+  seg.setDistanceThreshold(0.001); 
 
   int nr_points = (int) cloud_filtered->points.size();
-  while (<b>cloud_filtered->points.size() > 0.9 * nr_points</b>)
+  while (cloud_filtered->points.size() > 0.9 * nr_points)
   {
     // Segment the largest planar component from the remaining cloud
     seg.setInputCloud(cloud_filtered);
@@ -263,10 +263,10 @@ int main (int argc, char** argv)
   pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ>);
   tree->setInputCloud(cloud_filtered);
   
- <b>double tolerance = 0.15; // 15cm </b>
+  double tolerance = 0.15; // 15cm
   std::vector<pcl::PointIndices> cluster_indices;
-  <b>unsigned int min_pts_per_cluster = 2; </b>
-  <b>unsigned int max_pts_per_cluster = (cloud_filtered->points.size()); </b>
+  unsigned int min_pts_per_cluster = 2; 
+  unsigned int max_pts_per_cluster = (cloud_filtered->points.size()); 
   pcl::EuclideanClusterExtraction<pcl::PointXYZ> ec;
   ec.setClusterTolerance(tolerance); 
   ec.setMinClusterSize(min_pts_per_cluster);
