@@ -100,6 +100,8 @@ ORB_SLAM2/Examples/ROS/ORB_SLAM2/src/ros_stereo.cc
 SLAM.SaveMapPoints("MapPointsSave.txt");
 ```
 
+Rieseguire la 'rosbag' per la generazione del file .txt
+
 Viene modificato il CMakeList.txt implementando al suo interno le seguenti righe per la generazione dei file eseguibili pcd_write e cluster_extraction
 
 ```
@@ -211,9 +213,8 @@ int main () {
 }
 ```
 
-- Rieseguire la 'rosbag' per la generazione del file .txt
+Per la generazione del file .pcd, eseguire il seguente comando
 
-- Per la generazione del flie .pcd, eseguire il seguente comando <br>
 > $ ./pcd_write 
 
 
