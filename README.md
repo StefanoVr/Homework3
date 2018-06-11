@@ -185,11 +185,16 @@ per eseguire l'estrazione Cluster Euclidea e generare i file cloud_cluster.pcd <
 
 
 In seguito a vari tentativi sono stati modificati i valori:
-> seg.setMaxIteration(100);
+> seg.setMaxIteration(100); 
+
 > seg.setDistanceThreshold(0.001);
+
 > cloud_filtered->points.size() > 0.9 * nr_points
+
 > tollerance = 0.15; // 15 cm
+
 > min_pts_per_cluster = 2;
+
 > max_pts_per_cluster = (cloud_filtered->points.size())
 
 Generando così la point_cloud riportata di seguito
