@@ -102,6 +102,8 @@ SLAM.SaveMapPoints("MapPointsSave.txt");
 
 Rieseguire la 'rosbag' per la generazione del file .txt che verrà salvato nella cartella ORB_SLAM2/ dopo aver chiuso l'esecuzione della rosbag con il comando 'ctrl-c'
 
+![alt text]()
+
 Viene modificato il CMakeList.txt implementando al suo interno le seguenti righe per la generazione dei file eseguibili pcd_write e cluster_extraction
 
 NB: per la corretta esecuzione copiare i file pcd_write.cc e cluster_extraction.cc all'interno della cartella ORB_SLAM2/
