@@ -177,7 +177,7 @@ Per la visualizzazione della point_cloud generata, eseguire il seguente comando 
 Per clusterizzare il file .pcd ottenuto è stato seguito il codice al [link](http://www.pointclouds.org/documentation/tutorials/cluster_extraction.php)
 
 E' stato creato il file <br>
-> cluster_extraction.cc
+> cluster_extraction.cc <br>
 per eseguire l'estrazione Cluster Euclidea e generare i file cloud_cluster.pcd <br>
 
 ```
