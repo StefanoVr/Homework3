@@ -106,7 +106,6 @@ cd ORB_SLAM2/build
 cmake ..
 cmake --build .
 cd ..
-./build.sh
 ./build_ros.sh
 ```
 
